@@ -458,7 +458,24 @@ diag_dyad_effects_df <- bind_rows(diag_dyad_effects_list)
 write.csv(diag_dyad_effects_df, "Dyadic_effects_diagnostics.csv", row.names = FALSE)
 
 # Extract diagnostics plots -----
-t <- plot_list[[2]]
+
+# Save plots as multipaged PDF
+pdf("caterpillar_plots.pdf")
+
+# Loop through the list and print each plot with its index label
+for (i in seq_along(plot_list)) {
+  if (!is.null(plot_list[[i]])) {
+    # Add annotated week number to the plot
+    plot_with_label <- plot_list[[i]] +
+      labs(title = paste("Week", i))
+    
+    # Print the plot with index label
+    print(plot_with_label)
+  }
+}
+
+# Close the PDF device
+dev.off()
 
 # PLOT EFFECTS THROUGH TIME -----
 # new dyad estimate ------
