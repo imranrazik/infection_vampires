@@ -666,11 +666,13 @@ for (i in 1:length(results_dyads)) {
 }
 
 t4 <- tibble(week = 1:16, median = newinfection, low = newinfectionlow, high = newinfectionhigh)
+theme_set(theme_bw(base_size = 14))
 t4 %>% 
   ggplot(aes(x = week, y = median))+
   geom_point(size = 2)+
   geom_errorbar(aes(ymin=low, ymax=high, width=.1), size=1)+
   geom_hline(aes(yintercept = 0))+
+  ylim(-2.5, 2.5)+
   ylab("posterior probability")+
   xlab("time (weeks)")
 

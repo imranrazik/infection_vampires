@@ -318,7 +318,7 @@ if (INFECTED == TRUE){
   (model_fita <- a %>%
       add_predicted_draws(fita) %>%  # adding the posterior distribution
       ggplot(aes(x = period, y = n/total, shape = infected, color = infected))+  
-      geom_jitter(data = a, size = 2, width = 0.05, alpha = 0.5) +   # raw data
+      geom_jitter(data = a, size = 2, width = 0.05, height = 0, alpha = 0.5) +   # raw data
       geom_point(data = pointsa, aes(x = period, y = median), size = 3, position = position_dodge(width = 0.75))+
       geom_errorbar(data = pointsa, aes(x = period, 
                                           y = median, 
@@ -331,7 +331,7 @@ if (INFECTED == TRUE){
       scale_shape_manual(values = c("FALSE" = 15, "TRUE" = 17)) +
       scale_fill_brewer(palette = "Greys") +
       scale_color_manual(values=c("black", "red"))+
-      ylab("proportion of time\n") +  
+      ylab("proportion of time") +  
       xlab("") +
       theme_bw() +
       theme(legend.position = "none"))
@@ -501,7 +501,7 @@ if (INFECTED == TRUE){
   (model_fits <- s %>%
       add_predicted_draws(fits) %>%  # adding the posterior distribution
       ggplot(aes(x = period, y = n/total, shape = infected, color = infected))+  
-      geom_jitter(data = s, size = 2, width = 0.05, alpha = 0.5) +   # raw data
+      geom_jitter(data = s, size = 2, width = 0.05, height = 0, alpha = 0.5) +   # raw data
       geom_point(data = pointss, aes(x = period, y = median), size = 3, position = position_dodge(width = 0.75))+
       geom_errorbar(data = pointss, aes(x = period, 
                                         y = median, 
@@ -673,7 +673,7 @@ if (INFECTED == TRUE){
   (model_fitm <- m %>%
       add_predicted_draws(fitm) %>%  # adding the posterior distribution
       ggplot(aes(x = period, y = n/total, shape = infected, color = infected))+  
-      geom_jitter(data = m, size = 2, width = 0.05, alpha = 0.5) +   # raw data
+      geom_jitter(data = m, size = 2, width = 0.05, height = 0, alpha = 0.5) +   # raw data
       geom_point(data = pointsm, aes(x = period, y = median), size = 3, position = position_dodge(width = 0.75))+
       geom_errorbar(data = pointsm, aes(x = period, 
                                         y = median, 
@@ -859,7 +859,7 @@ if (INJURED == TRUE){
   (model_fita <- a %>%
       add_predicted_draws(fita) %>%  # adding the posterior distribution
       ggplot(aes(x = period, y = n/total, shape = injured, color = injured))+  
-      geom_jitter(data = a, size = 2, width = 0.05, alpha = 0.5) +   # raw data
+      geom_jitter(data = a, size = 2, width = 0.05, height = 0, alpha = 0.5) +   # raw data
       geom_point(data = pointsa, aes(x = period, y = median), size = 3, position = position_dodge(width = 0.75))+
       geom_errorbar(data = pointsa, aes(x = period, 
                                         y = median, 
@@ -872,7 +872,7 @@ if (INJURED == TRUE){
       scale_shape_manual(values = c("FALSE" = 15, "TRUE" = 17)) +
       scale_fill_brewer(palette = "Greys") +
       scale_color_manual(values=c("black", "red"))+
-      ylab("proportion of time\n") +  
+      ylab("proportion of time") +  
       xlab("") +
       theme_bw() +
       theme(legend.position = "none"))
@@ -1037,7 +1037,7 @@ if (INJURED == TRUE){
   (model_fits <- s %>%
       add_predicted_draws(fits) %>%  # adding the posterior distribution
       ggplot(aes(x = period, y = n/total, shape = injured, color = injured))+  
-      geom_jitter(data = s, size = 2, width = 0.05, alpha = 0.5) +   # raw data
+      geom_jitter(data = s, size = 2, width = 0.05, height = 0, alpha = 0.5) +   # raw data
       geom_point(data = pointss, aes(x = period, y = median), size = 3, position = position_dodge(width = 0.75))+
       geom_errorbar(data = pointss, aes(x = period, 
                                         y = median, 
@@ -1206,7 +1206,7 @@ if (INJURED == TRUE){
   (model_fitm <- m %>%
       add_predicted_draws(fitm) %>%  # adding the posterior distribution
       ggplot(aes(x = period, y = n/total, shape = injured, color = injured))+  
-      geom_jitter(data = m, size = 2, width = 0.05, alpha = 0.5) +   # raw data
+      geom_jitter(data = m, size = 2, width = 0.05, height = 0, alpha = 0.5) +   # raw data
       geom_point(data = pointsm, aes(x = period, y = median), size = 3, position = position_dodge(width = 0.75))+
       geom_errorbar(data = pointsm, aes(x = period, 
                                         y = median, 
