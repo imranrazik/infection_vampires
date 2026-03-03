@@ -673,14 +673,14 @@ t4 %>%
   geom_errorbar(aes(ymin=low, ymax=high, width=.1), size=1)+
   geom_hline(aes(yintercept = 0))+
   ylim(-2.5, 2.5)+
-  ylab("posterior probability")+
+  ylab("Interaction coefficient")+
   xlab("time (weeks)")
 
 # save the values for estimates across weeks 
 write.csv(t4, "interaction_estimates.csv", row.names = FALSE)
 
 ggsave(
-  'Fig2.pdf',
+  'Fig3.pdf',
   plot = last_plot(),
   scale = 1,
   width = 6,
@@ -689,7 +689,7 @@ ggsave(
   dpi = 300)
 
 ggsave(
-  'Fig2.png',
+  'Fig3.png',
   plot = last_plot(),
   scale = 1,
   width = 6,
@@ -730,7 +730,7 @@ theme_set(theme_bw(base_size = 14))
 
 # save plot
 ggsave(
-  'Fig3.pdf',
+  'Fig4.pdf',
   plot = last_plot(), 
   scale = 1,
   width = 6,
@@ -739,7 +739,7 @@ ggsave(
   dpi = 300)
 
 ggsave(
-  'Fig3.png',
+  'Fig4.png',
   plot = last_plot(),
   scale = 1,
   width = 6,
