@@ -1,0 +1,10 @@
+"","model","effect","estimate","lower.HPD","upper.HPD"
+"1","allogrooming","interaction term (infected x treatment period)",1.38532430191411,1.1060885037104,1.65061677656946
+"2","allogrooming","infected effect (pre-treatment)",-1.25822281571879,-1.86002642449001,-0.659395092405032
+"3","allogrooming","infected effect (post-treatment)",0.126017905445861,-0.472845071535751,0.721005576626727
+"4","self-grooming","interaction term (infected x treatment period)",0.169898522015086,0.051740115228579,0.289290436756718
+"5","self-grooming","infected effect (pre-treatment)",0.228509174375658,-0.249386596510289,0.681566865733515
+"6","self-grooming","infected effect (post-treatment)",0.396262272234343,-0.0798437662210141,0.86312062621439
+"7","moving","interaction term (infected x treatment period)",1.04573691588545,0.915221346494722,1.17243854681687
+"8","moving","infected effect (pre-treatment)",-1.16001344347346,-1.70668116905773,-0.598316395710347
+"9","moving","infected effect (post-treatment)",-0.115726826735634,-0.677069961556583,0.430715901854463
